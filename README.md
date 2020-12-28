@@ -1,43 +1,74 @@
-# Prefix = Ctrl + a
+# TMUX COMMANDS
 
-# Open new pane
-Prefix + . or -
+## Install
 
-# Navigating panes
-Alt + cursor
+```
+sudo apt install tmux
+```
 
-# Closing panes
-Ctrl + d
+- copy .tmux.conf under ~/
 
-# Create new windows (virtual desktop)
-Prefix + c
+- reload
 
-# Navigating windows
-Prefix + p (previous) or n (next)
+```
+tmux source-file ~/.tmux.conf
+```
 
-# Terminate windows
-Prefix + q
+## Commands
 
-# Detach current session
-Prefix + d or D (to choice which session)
+```
+Prefix = Ctrl + a
+```
 
-# See list of sessions
+- Open new pane
+> Prefix + . or -
+
+- Navigating panes
+> Alt + cursor
+
+- Closing panes
+> Ctrl + d
+
+- Create new windows (virtual desktop)
+> Prefix + c
+
+- Navigating windows
+> Prefix + p (previous) or n (next)
+
+- Terminate windows
+> Prefix + q
+
+- Detach current session
+> Prefix + d or D (to choice which session)
+
+- See list of sessions
+```
 tmux ls
+```
 
-# attach to a old session
+- attach to a old session
+```
 tmux attach -t <session name>
+```
 
-# create a new session with a custom name
+- create a new session with a custom 
+name
+```
 tmux new -s <session name>
+```
 
-# rename a session
+- rename a session
+```
 tmux rename-session -t <old session name> <new session name>
 prefix + $
+```
 
-# make a pane full screen
+- make a pane full screen
+```
 prefix + z
+```
 
-# rename current window
+- rename current window
+```
 prefix + ,
-
-
+```
